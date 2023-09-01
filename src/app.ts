@@ -3,7 +3,7 @@ import { PORT } from "@global/env";
 import { mongoConnect } from "@configs/mongo";
 import session from "@middlewares/session";
 import { authRouter } from "./routes";
-import Logging from "lib/Logging";
+import Logging from "@lib/Logging";
 import { logger } from "@middlewares/logger";
 
 const app = express();

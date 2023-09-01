@@ -1,6 +1,5 @@
 import { NextFunction, Request, Response, Router } from "express";
 import { accessControl } from "./access-control";
-import bcrypt from "bcrypt"
 
 const router = Router();
 

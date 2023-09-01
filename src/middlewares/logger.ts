@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import Logging from "lib/Logging";
+import Logging from "@lib/Logging";
 
 export const logger = (req: Request, res: Response, next: NextFunction) => {
   Logging.info(

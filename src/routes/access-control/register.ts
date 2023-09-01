@@ -3,7 +3,7 @@ import { Session } from "express-session";
 import { User, newUserSession } from "@models/User";
 import { toHash } from "@services/passwordMethods";
 import { generateOTP } from "@utils/generateOtp";
-import Logging from "lib/Logging";
+import Logging from "@lib/Logging";
 
 const router = Router();
 

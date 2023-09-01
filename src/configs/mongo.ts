@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { MONGO_URI, MONGO_USER, MONGO_PASSWORD } from "@global/env";
-import Logging from "lib/Logging";
+import Logging from "@lib/Logging";
 
 export const mongoConnect = async () => {
   try {
