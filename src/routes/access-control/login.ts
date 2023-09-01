@@ -3,7 +3,7 @@ import { generateOTP } from "@utils/generateOtp";
 import bcrypt from "bcrypt";
 import { NextFunction, Request, Response, Router } from "express";
 import { Session } from "express-session";
-import Logging from "lib/Logging";
+import Logging from "@lib/Logging";
 
 const router = Router();
 
@@ -40,7 +40,7 @@ router.post("/", async (req: Request, res: Response, next: NextFunction) => {
       phone,
       otp,
     };
-    console.log(otp)
+    Logging.info(otp);
     return res.status(200).send({
       message: "Verify OTP!",
     });

@@ -20,7 +20,7 @@ interface UserInProgressSessionData extends Session {
   userSessionData: userType;
 }
 
-interface NewUserSessionData extends Session {
+export interface NewUserSessionData extends Session {
   userSessionData: newUserSession;
 }
 

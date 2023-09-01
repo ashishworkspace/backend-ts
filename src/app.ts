@@ -2,7 +2,7 @@ import express, { NextFunction, Request, Response } from "express";
 import { PORT } from "@global/env";
 import { mongoConnect } from "@configs/mongo";
 import session from "@middlewares/session";
-import { authRouter } from "./routes";
+import { authRouter } from "@routes/index";
 import Logging from "@lib/Logging";
 import { logger } from "@middlewares/logger";
 
